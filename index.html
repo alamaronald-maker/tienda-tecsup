@@ -1,18 +1,65 @@
+
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Tienda TECSUP</title>
-  <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda TECSUP: consulta productos, precios y cantidades.">
+    <title>Tienda TECSUP</title>
+
+    <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
-  <h1>Tienda TECSUP</h1>
-  <table>
-    <tr><th>Producto</th><th>Precio</th><th>Cantidad</th></tr>
-    <tr><td>Polo TECSUP</td><td>S/ 25.00</td><td>2</td></tr>
-    <tr><td>Taza TECSUP</td><td>S/ 18.00</td><td>1</td></tr>
-  </table>
-  <p id="total">Total: S/ 0.00</p>
-  <script src="script.js"></script>
+
+    <header>
+        <h1>🛒 Tienda TECSUP</h1>
+        <p>Productos institucionales para nuestra comunidad TECSUP.</p>
+    </header>
+
+    <main>
+        <section aria-labelledby="titulo-productos">
+            <h2 id="titulo-productos">Productos disponibles</h2>
+
+            <table>
+                <caption>Lista de productos de Tienda TECSUP</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Precio unitario</th>
+                        <th scope="col">Cantidad</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Polo TECSUP</td>
+                        <td>S/ 25.00</td>
+                        <td>2</td>
+                    </tr>
+
+                    <tr>
+                        <td>Taza TECSUP</td>
+                        <td>S/ 18.00</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section aria-labelledby="titulo-resumen">
+            <h2 id="titulo-resumen">Resumen de compra</h2>
+            <p id="total" aria-live="polite">Total: S/ 0.00</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tienda TECSUP - Proyecto académico.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
